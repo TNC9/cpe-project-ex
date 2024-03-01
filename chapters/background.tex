@@ -1,7 +1,5 @@
 \chapter{\ifenglish Background Knowledge and Theory\else ทฤษฎีที่เกี่ยวข้อง\fi}
 
-การทำโครงงาน เริ่มต้นด้วยการศึกษาค้นคว้า ทฤษฎีที่เกี่ยวข้อง หรือ งานวิจัย/โครงงาน ที่เคยมีผู้นำเสนอไว้แล้ว ซึ่งเนื้อหาในบทนี้ก็จะเกี่ยวกับการอธิบายถึงสิ่งที่เกี่ยวข้องกับโครงงาน เพื่อให้ผู้อ่านเข้าใจเนื้อหาในบทถัดๆ ไปได้ง่ายขึ้น
-
 \section{Image processing}
 
 คือกระบวนการที่ใช้คอมพิวเตอร์เพื่อแก้ไข ปรับปรุง หรือแปลงภาพดิจิตัลให้มีความเหมาะสมสำหรับการใช้งานต่าง ๆ โดยมักใช้เทคโนโลยีและอัลกอริทึมต่าง ๆ เพื่อประมวลผลภาพ เช่น การเพิ่มความคมชัด การปรับแสงและเงา การตรวจจับวัตถุ การลบสิ่งกีดขวาง หรือการแยกสี
@@ -25,6 +23,7 @@
   \item {Edge orientation Substituted: เปลี่ยนค่า orientation ของ edge ให้อยู่ในช่วงที่สามารถระบุพิกัดเป็นตำแหน่งของ pixel รอบๆได้}
 \end{itemize}
 
+
 \begin{figure}[h!]
   \begin{center}
     \includegraphics[height=7cm]{2_2.jpg}
@@ -32,6 +31,7 @@
   \caption[Poem]{Edge orientation Substituted}
 \end{figure}
 
+\newpage
 \begin{itemize}
   \item {Non-maximum Suppression}
 \end{itemize}
@@ -48,6 +48,7 @@
   \item {Hysteresis: แยกขอบออกเป็นส่วนๆ แบ่งตามตำแหน่งที่เชื่อต่อกันและความเข้ม ขอบที่มีความเข้มอ่อนจะไม่เชื่อมต่อกับขอบส่วนที่มีความเข้มสูง เราจะกำจัดส่วนนั้นทิ้งไป}
 \end{itemize}
 
+\newpage
 \begin{figure}[h!]
   \begin{center}
     \includegraphics[height=8cm]{2_4.png}
@@ -66,9 +67,10 @@
   \caption[Poem]{หลักการทำงาน ของActive Contour}
 \end{figure}
 
+\newpage
 \subsection{Active Contour : Snake Model}
-เป็นโมเดลที่ใช้ใน Computer Vision สำหรับการวาดเส้นรอบวัตถุในภาพ 2 มิติ โมเดลนี้ถูกพัฒนาโดย Michael Kass, Andrew Witkin และ Demetri Terzopoulos ในปี 1987
-โมเดล Snake เปรียบเสมือนเส้นยางยืดหยุ่นที่ถูกดึงดูดไปยังขอบของวัตถุในภาพ โมเดลจะใช้พลังงานสองประเภทในการดึงดูดเส้นยางไปยังขอบวัตถุ:
+เป็นโมเดลที่ใช้ใน Computer Vision สำหรับการวาดเส้นรอบวัตถุในภาพ 2 มิติ โมเดลนี้ถูกพัฒนาโดย \newline
+Michael Kass, Andrew Witkin และ Demetri Terzopoulos ในปี 1987 โมเดล Snake เปรียบเสมือนเส้นยางยืดหยุ่นที่ถูกดึงดูดไปยังขอบของวัตถุในภาพ โมเดลจะใช้พลังงานสองประเภทในการดึงดูดเส้นยางไปยังขอบวัตถุ:
 
 \begin{itemize}
   \item {พลังงานภายใน: ควบคุมความโค้งและความเรียบของเส้นยาง}
@@ -123,7 +125,7 @@ Extracurricular knowledge used, applied, or integrated in this project
 
   \begin{figure}[h!]
     \begin{center}
-      \includegraphics{2_7.jpg}
+      \includegraphics[width=\textwidth]{2_7.jpg}
     \end{center}
     \caption[Poem]{emulsion}
   \end{figure}
